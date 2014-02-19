@@ -1,0 +1,35 @@
+{
+    "name": "robvanaarle/ultimo-phptpl",
+    "description": "Template engine in PHP",
+    "type": "library",
+    "keywords": [
+        "template",
+        "php"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+	  		{
+	    	  "name": "Rob van Aarle"
+	  		}
+	  ],
+	  "repositories": [
+      	{
+        	"type": "vcs",
+        	"url": "https://github.com/robvanaarle/ultimo-html"
+      	},
+      	{
+        	"type": "vcs",
+        	"url": "https://github.com/robvanaarle/ultimo-css"
+      	}
+    ],
+    "require": {
+        "robvanaarle/ultimo-html": "dev-master",
+        "robvanaarle/ultimo-css": "dev-master"
+    },
+    "autoload": {
+    		"psr-4": {
+       			"ultimo\\": "src/ultimo/"
+    		}
+  }
+}
+
