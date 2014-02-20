@@ -36,7 +36,7 @@
     },
     "suggest": {
     		"robvanaarle/ultimo-filemtimecache": "Allows the use of the HeadTagFileCache helper decorators",
-    		"robvanaarle/ultimo-slug": "Allows the use of the Slugify helper",
+    		"robvanaarle/ultimo-slug": "Allows the use of the Slugify helper"
     },
     "autoload": {
     		"psr-4": {
