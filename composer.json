@@ -20,11 +20,23 @@
       	{
         	"type": "vcs",
         	"url": "https://github.com/robvanaarle/ultimo-css"
+      	},
+      	{
+        	"type": "vcs",
+        	"url": "https://github.com/robvanaarle/ultimo-filemtimecache"
+      	},
+      	{
+        	"type": "vcs",
+        	"url": "https://github.com/robvanaarle/ultimo-slug"
       	}
     ],
     "require": {
         "robvanaarle/ultimo-html": "dev-master",
         "robvanaarle/ultimo-css": "dev-master"
+    },
+    "suggest": {
+    		"robvanaarle/ultimo-filemtimecache": "Allows the use of the HeadTagFileCache helper decorators",
+    		"robvanaarle/ultimo-slug": "Allows the use of the Slugify helper",
     },
     "autoload": {
     		"psr-4": {

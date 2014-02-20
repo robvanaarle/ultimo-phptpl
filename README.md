@@ -10,6 +10,8 @@ Template engine in PHP
 * PHP 5.3
 * Ultimo CSS
 * Ultimo HTML
+* Ultimo Filemtimecache (optional)
+* Ultimo Slug (optional)
 
 ## Usage
 
