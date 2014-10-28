@@ -9,6 +9,7 @@ namespace ultimo\phptpl\helpers\decorators\scssphp;
 class Scssphp extends \ultimo\phptpl\HelperDecorator {
   protected $scssphpPath = 'scss.inc.php';
   protected $compiledPath;
+  protected $reversedCompiledPath;
   protected $scssc = null;
   
   /**
@@ -27,6 +28,8 @@ class Scssphp extends \ultimo\phptpl\HelperDecorator {
       throw new \Exception("Missing compiledPath config");
     }
     $this->compiledPath = $config['compiledPath'];
+    $compiledPathDirNames = explode('/', $this->compiledPath);
+    $this->reversedCompiledPath = str_repeat('../', count($compiledPathDirNames));
     
     if (isset($config['scssphpPath'])) {
       $this->scssphpPath = $config['scssphpPath'];
@@ -99,7 +102,7 @@ class Scssphp extends \ultimo\phptpl\HelperDecorator {
     $scssc->setImportPaths(array($pathinfo['dirname']));
     
     // make sure paths to assets relative to scss are fixed
-    $this->registerUrlFunction($scssc, '/' . $pathinfo['dirname']);
+    $this->registerUrlFunction($scssc, $this->reversedCompiledPath . $pathinfo['dirname']);
     
     $compiled = $scssc->compile(file_get_contents($href), $href);
     file_put_contents($hrefCompiled, $compiled);

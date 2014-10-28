@@ -8,40 +8,41 @@
     ],
     "license": "BSD-3-Clause",
     "authors": [
-	  		{
-	    	  "name": "Rob van Aarle"
-	  		}
-	  ],
-	  "repositories": [
-      	{
-        	"type": "vcs",
-        	"url": "https://github.com/robvanaarle/ultimo-html"
-      	},
-      	{
-        	"type": "vcs",
-        	"url": "https://github.com/robvanaarle/ultimo-css"
-      	},
-      	{
-        	"type": "vcs",
-        	"url": "https://github.com/robvanaarle/ultimo-filemtimecache"
-      	},
-      	{
-        	"type": "vcs",
-        	"url": "https://github.com/robvanaarle/ultimo-slug"
-      	}
+      {
+        "name": "Rob van Aarle"
+      }
+    ],
+    "repositories": [
+      {
+        "type": "vcs",
+        "url": "https://github.com/robvanaarle/ultimo-html"
+      },
+      {
+        "type": "vcs",
+        "url": "https://github.com/robvanaarle/ultimo-css"
+      },
+      {
+        "type": "vcs",
+        "url": "https://github.com/robvanaarle/ultimo-filemtimecache"
+      },
+      {
+        "type": "vcs",
+        "url": "https://github.com/robvanaarle/ultimo-slug"
+      }
     ],
     "require": {
         "robvanaarle/ultimo-html": "dev-master",
         "robvanaarle/ultimo-css": "dev-master"
     },
     "suggest": {
-    		"robvanaarle/ultimo-filemtimecache": "Allows the use of the HeadTagFileCache helper decorators",
-    		"robvanaarle/ultimo-slug": "Allows the use of the Slugify helper"
+      "robvanaarle/ultimo-filemtimecache": "Allows the use of the HeadTagFileCache helper decorators",
+      "robvanaarle/ultimo-slug": "Allows the use of the Slugify helper",
+      "mrclay/minify": "Allows the user of the mrclay's decorators, tested with 2.2.*"
     },
     "autoload": {
-    		"psr-4": {
-       			"ultimo\\": "src/ultimo/"
-    		}
+      "psr-4": {
+      "ultimo\\": "src/ultimo/"
+    }
   }
 }
 
