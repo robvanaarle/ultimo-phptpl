@@ -162,7 +162,7 @@ class Scssphp extends \ultimo\phptpl\HelperDecorator {
   }
   
   public function prependStylesheet($href, $media='', $dup=\ultimo\phptpl\helpers\support\HeadTag::DUP_DISALLOWED) {
-    parent::appendStylesheet($this->compile($href), $media, $dup);
+    parent::prependStylesheet($this->compile($href), $media, $dup);
     return $this;
   }
 }
