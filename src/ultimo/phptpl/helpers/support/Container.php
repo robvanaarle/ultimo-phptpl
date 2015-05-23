@@ -17,6 +17,20 @@ class Container {
   protected $captureLock = false;
   
   /**
+   * Metadata about the container
+   * @var mixed
+   */
+  protected $metadata = null;
+  
+  /**
+   * Constructor
+   * @param mixed Metadata about the container.
+   */
+  public function __construct($metadata = null) {
+    $this->metadata = $metadata;
+  }
+  
+  /**
    * Starts the capturing.
    */
   public function captureStart() {
@@ -61,5 +75,13 @@ class Container {
    */
   public function __toString() {
     return $this->value;
+  }
+  
+  /**
+   * Returns metadata about the container.
+   * @return mixed Metadata about the container.
+   */
+  public function getMetadata() {
+    return $this->metadata;
   }
 }
